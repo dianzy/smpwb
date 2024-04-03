@@ -9,8 +9,10 @@ function App() {
     </div>
     <div className="full">
       <div className="inp">
-      <input type="text" placeholder="Text Box 1" className="text-box" />
-      <input type="text" placeholder="Text Box 2" className="text-box" />
+        <p>Login:</p>
+      <input type="text" placeholder="User Name" className="text-box" />
+      <input type="text" placeholder="password" className="text-box" />
+      <button>Log in</button>
       </div>
     </div>
   </div>
