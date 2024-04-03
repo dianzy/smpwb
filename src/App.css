@@ -1,44 +1,22 @@
-.wrapper {
+.full{
+height: 100vh;
+  background-color: rgb(253, 253, 253);
+  margin-top: 10px;}
+  
+.head{
+    height: 25vh;
+      background-color: rgb(196, 209, 78);
+      margin-top: 10px;
+}
+.body{
+  height: 100vh;
+    background-color: rgb(56, 150, 250);
+    
+}
+.form{
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align items to the start of the flex-direction */
-}
-
-.header {
-  display: flex;
-  width: 100%;
-  background-color: rgb(237, 237, 85);
-  height: 25vh; /* Adjusted for clarity, keep as is if you want */
-}
-
-.csk {
-  font-size: 32px;
-  font-weight: bolder;
-  justify-content: left;
-  align-items: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-left: 20px; /* Add some space on the left */
-}
-
-.full {
-  display: flex;
-  background-color: rgba(59, 59, 236, 0.95);
-  width: 100%; /* Take full width */
-}
-
-.inp {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Align content to start */
-  align-items: flex-start; /* Align items to the left */
-  width: 50%;
-  padding: 20px; /* Adjusted padding for alignment */
-  color: azure;
-}
-
-.text-box {
-  margin: 5px 0;
-}
-button{
-  margin: 5px;
+  width: 25%;
+  gap: 5px;
 }

@@ -1,30 +1,42 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+function App()
+{
+  const [user, setuser] = useState(''); 
+  const [pass, setPass] = useState(''); 
+  const [message, setMessage] = useState(''); 
+  const corrus="noob"
+  const crp="cryp"
+ 
+  const handleClick=()=>{ 
+if(user===corrus && pass===crp){
+  setMessage("pass")
+}
+else{
+  setMessage("fail")
+}
+setuser('');
+setPass('');
 
-function App() {
-  return(
-  <div className="wrapper">
-    <div className="header">
-      <div className="csk">CHENNAI SUPER KINGS</div>
-    </div>
-    <div className="full">
-      <div className="inp">
-        <p>Login:</p>
-      <input type="text" placeholder="User Name" className="text-box" />
-      <input type="text" placeholder="password" className="text-box" />
-      <button>Log in</button>
-      </div>
-    </div>
-  </div>
-    );
-  }
-  
-  export default App;
-  
+}
 
+return(
+<div className="hrs">
   
-  
-  
-  
-  
-  
+  <input type="text"  value={user} onChange={(e)=>setuser(e.target.value)}/>
+  <input type="password" value={pass} onChange={(e)=>setPass(e.target.value)}/>
+
+
+  <button onClick={handleClick}> Sub </button>
+  <p>{message}</p>
+
+
+
+</div>
+);
+}
+
+
+
+
+export default App;
