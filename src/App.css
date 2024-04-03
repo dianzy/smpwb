@@ -1,8 +1,14 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start of the flex-direction */
+}
+
 .header {
   display: flex;
   width: 100%;
   background-color: rgb(237, 237, 85);
-  height: 25vh;
+  height: 25vh; /* Adjusted for clarity, keep as is if you want */
 }
 
 .csk {
@@ -11,22 +17,24 @@
   justify-content: left;
   align-items: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 20px; /* Add some space on the left */
 }
 
 .full {
   display: flex;
   background-color: rgba(59, 59, 236, 0.95);
-  padding: 2vh 0; /* Adjust vertical padding */
+  width: 100%; /* Take full width */
 }
 
 .inp {
   display: flex;
-  flex-direction: column; /* Stack text boxes vertically */
-  justify-content: flex-start;
-  width: 100%; /* Ensure .inp fills its parent to correctly align text boxes */
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to start */
+  align-items: flex-start; /* Align items to the left */
+  width: 50%;
+  padding: 20px; /* Adjusted padding for alignment */
 }
 
 .text-box {
-  margin: 5px 0; /* Add some spacing between text boxes */
-  /* Optionally, you can set a max-width if you want the text boxes to be smaller */
+  margin: 5px 0;
 }
