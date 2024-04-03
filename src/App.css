@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  width: 100%;
+  background-color: rgb(237, 237, 85);
+  height: 25vh;
+}
+
+.csk {
+  font-size: 32px;
+  font-weight: bolder;
+  justify-content: left;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.full {
+  display: flex;
+  background-color: rgba(59, 59, 236, 0.95);
+  padding: 2vh 0; /* Adjust vertical padding */
+}
+
+.inp {
+  display: flex;
+  flex-direction: column; /* Stack text boxes vertically */
+  justify-content: flex-start;
+  width: 100%; /* Ensure .inp fills its parent to correctly align text boxes */
+}
+
+.text-box {
+  margin: 5px 0; /* Add some spacing between text boxes */
+  /* Optionally, you can set a max-width if you want the text boxes to be smaller */
+}
